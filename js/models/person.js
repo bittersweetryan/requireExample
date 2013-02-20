@@ -7,18 +7,18 @@ define(
     ],
     function( $, _, Backbone, app ){
 
-        var person = Backbone.Model.extend( {
+        var Person = Backbone.Model.extend( {
 
             defaults : {
                 name : 'John'
             },
 
             sayHello : function(){
-                return 'Hello ' + this.name;
+                return 'Hello ' + this.get( 'name' );
             }
         } );
 
 
-        app.addModel( 'person', person );
+        app.addModel( 'Person', Person );
     }
 );

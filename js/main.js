@@ -5,6 +5,8 @@ require(
 	],
 	function( app ){
 
-		console.log( app.views );
+		var appView = new app.views.appView();
+
+        appView.render();
 	}
 )

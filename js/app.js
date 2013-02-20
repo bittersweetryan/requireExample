@@ -14,7 +14,7 @@ define(
 
 		App.prototype.addModel = function( name, model ){
 
-			this.models[ name ] = models;
+			this.models[ name ] = model;
 		};
 
 		App.prototype.init = function(){
